@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 15px;
+  padding: 0;
  box-sizing: border-box;
 }
 body {
@@ -8,7 +8,7 @@ body {
   text-align: center;
   font-family: Arial,Helvetica,Sans-Serif;
   font-style: italic;
-  padding: 40px 20px;
+  padding: 60px 40px;
 }
 li {
   margin-top: 20px;
@@ -28,6 +28,7 @@ ul {
   color: black;
   text-align: left;
   font-family: sans-Serif;
+  padding: 40px 20px;
 }
 #menuToggle {
   position: fixed;
