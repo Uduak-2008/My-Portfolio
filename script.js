@@ -11,7 +11,7 @@ document.addEventListener("click", (e) => {
     menu.classList.remove("show");
   }
 });
-const menuBtn = document.getElementById('menu-btn');
+const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
 menuBtn.addEventListener('click', function(){
   menu.classList.toggle('active');

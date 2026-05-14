@@ -46,6 +46,7 @@ ul {
   cursor: pointer;
 }
 #menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,7 +59,9 @@ ul {
   transform: translateX(-100%);
   transition: 0.3s ease;
 }
-
+#menu.active {
+  display: block;
+}
 #menu.show {
   transform: translateX(0);
 }
