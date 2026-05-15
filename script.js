@@ -1,8 +1,13 @@
-const menuToggle = document.getElementById('menuToggle');
+const menuBtn = document.getElementById('menuToggle')
 const menu = document.getElementById('menu');
 
-const menuToggle = document.getElementById('menuToggle');
-const menu = document.getElementById('menu');
-menutoggle.addEventListener('click', function(){
-  menu.classList.toggle('active');
-});
+menuToggle.onclick = function() {
+menu.classList.add('show');
+menuBtn.classList.add('hide');
+};
+document.onclick = function(event) {
+  if (menu.classList.contains('show') && event.target !== menuBtn) {
+    menu.classList.remove('show');
+    menuBtn.classList.remove('hide');
+  }
+};

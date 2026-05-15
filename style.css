@@ -38,13 +38,14 @@ ul {
   color: beige;
   padding: 15px 15px;
   border-radius: 30% 30%/80% 80%;
-  z-index: 1000;
+  z-index: 100;
 }
 #menuToggle button {
   font-size: 24px;
   padding: 8px 12px;
   cursor: pointer;
 }
+
 #menu {
   position: fixed;
   top: 0;
@@ -53,13 +54,13 @@ ul {
   height: 100vh;
   background: grey;
   padding: 60px 20px;
-
-  /* hidden by default */
-  transform: translateX(-100%);
-  transition: 0.3s ease;
+display: none;
 }
 #menu.show {
-  transform: translateX(0);
+display: block;
+}
+.hide {
+  display: none;
 }
 .menu-links a{
   display: block;
