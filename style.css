@@ -144,3 +144,22 @@ img {
   border: none;
   border-radius: 10px;
 }
+@media (min-width:768px) {
+  body {
+    padding: 30px;
+    padding-top: 80px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
+  li {
+    font-size: 18px;
+  }
+}
+
