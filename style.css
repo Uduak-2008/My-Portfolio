@@ -44,8 +44,12 @@ ul {
   text-align: left;
   font-family: sans-Serif;
   padding: 40px 20px;
+  list-style: none;
 }
-
+html,body {
+  width: 100%;
+  min-height: 100hv;
+}
 #menuToggle {
   position: fixed;
   top: 20px;
