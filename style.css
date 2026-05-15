@@ -12,23 +12,23 @@ body {
   padding-top: 80px;
 }
 h1 {
-  font-size: 80px;
-  margin: 30px 0 20px 0;
-}
-h2 {
-  font-size: 50px!important;
-  margin: 40px 0 20px 0;
-}
-p {
-  font-size: 40px;
-  line-height: 1.6;
+  font-size: 36px;
   margin: 20px 0;
 }
+h2 {
+  font-size: 28px;
+  margin: 30px 0 15px 0;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 15px 0;
+}
 li {
-  font-size: 32px;
-  margin: 25px 0;
-  padding: 30px;
-  border-radius: 15px;
+  font-size: 18px;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
   list-style: none;
   text-align: left;
 }
@@ -48,12 +48,12 @@ ul {
 }
 #menuToggle {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   background: black;
   color: beige;
-  padding: 12px 18px;
-  font-size: 20px;
+  padding: 10px 16px;
+  font-size: 18px;
   border: none;
   border-radius: 30% 30%/80% 80%;
   cursor: pointer;
@@ -69,13 +69,12 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
-  max-width: 280px;
+  width: 260px;
   height: 100%;
   background: grey;
-  padding: 80px 20px 20px 20px;
-display: none;
-z-index: 999;
+  padding-top: 70px;
+  display: none;
+  z-index: 999;
 }
 #menu.show {
 display: block;
@@ -83,12 +82,10 @@ display: block;
 #menu a {
   display: block;
   color: none;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
-  padding: 15px;
-  margin: 5px 0;
-  border-radius: 8px;
-  text-align: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #555;
 }
 .hide {
   display: none;
@@ -102,7 +99,7 @@ display: block;
   border-bottom: 1px solid beige;
 }
 .menu-links a:hover {
-  background: white;
+  background: #555;
 }
 button {
   padding: 10px;
@@ -124,7 +121,7 @@ button {
   width: 220px;
   padding: 12px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 18px;
   color: white;
   cursor: pointer;
