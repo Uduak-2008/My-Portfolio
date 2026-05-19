@@ -161,16 +161,6 @@ img {
   li {
     font-size: 18px;
   }
-  .project-card {
-  width: 95%;
-  padding: 15px;
-  }
-  .project-card h3 {
-    font-size: 20px;
-  }
-  .project-card p {
-    font-size: 14px;
-  }
 }
 .projects-container {
   display:flex;
@@ -201,4 +191,16 @@ img {
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
+}
+@media (max-width: 768px) {
+.project-card {
+  width: 95%;
+  padding: 15px;
+  }
+  .project-card h3 {
+    font-size: 20px;
+  }
+  .project-card p {
+    font-size: 14px;
+  }
 }
