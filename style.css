@@ -11,6 +11,14 @@ body {
   padding: 20px;
   padding-top: 80px;
 }
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+}
 h1 {
   font-size: 36px;
   margin: 20px 0;
