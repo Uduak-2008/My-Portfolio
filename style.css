@@ -47,12 +47,18 @@ mark {
   padding: 5px 10px;
   border-radius: 5px;
 }
-ul {
+ul li {
   color: black;
   text-align: left;
   font-family: sans-Serif;
-  margin: 30px 0 15px 0;
+  margin-bottom: 25px;
+  line-height: 1.6;
   list-style: none;
+}
+ul li strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 #menuToggle {
   position: absolute;
