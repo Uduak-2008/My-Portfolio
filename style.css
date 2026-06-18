@@ -51,8 +51,7 @@ ul {
   color: black;
   text-align: left;
   font-family: sans-Serif;
-  margin: 30px 0;
-  padding: 10px;
+  margin: 30px 0 15px 0;
   list-style: none;
 }
 #menuToggle {
@@ -280,7 +279,7 @@ form button[type="submit"]:active {
   }
 }
 .project-card {
-  background: #f5f5f5;
+  background: grey;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -317,7 +316,7 @@ form button[type="submit"]:active {
 }
 .resume-link {
   display: inline-block;
-  background: blue;
+  background: grey;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -326,5 +325,5 @@ form button[type="submit"]:active {
   margin-top: 10px;
 }
 .resume-link:hover {
-  background: darkblue;
+  background: rgb(44, 38, 38);
 }
