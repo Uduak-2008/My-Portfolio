@@ -49,13 +49,14 @@ mark {
 }
 ul li {
   color: black;
-  text-align: left;
+  text-align: center;
   font-family: sans-Serif;
   margin-bottom: 25px;
   line-height: 1.6;
   list-style: none;
 }
 ul li strong {
+  text-align: center;
   display: block;
   font-size: 20px;
   margin-bottom: 5px;
