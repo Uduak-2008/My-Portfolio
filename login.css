@@ -7,12 +7,12 @@
 body {
   background: grey;
   display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   font-family: Arial,Helvetica,Sans-Serif;
   font-style: italic;
-  padding: 20px;
 }
 .login-container {
     background: white;
