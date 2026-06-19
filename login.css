@@ -6,12 +6,12 @@
 }
 body {
   background: linear-gradient(to right, white,grey);
-  text-align: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
   font-family: Arial,Helvetica,Sans-Serif;
   font-style: italic;
   padding: 20px;
-  padding-top: 80px;
 }
 .login-container {
     background: white;
@@ -20,8 +20,8 @@ body {
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     width: 350px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    transform: translateY(-30px);
 }
 .login-container h2 {
     color: #333;
