@@ -1,53 +1,40 @@
 <!Doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="Viewport" content="width=device-width,initial-scale=1.0">
-    <title>Blaq Zenda</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Uduak-Abasi Udoma</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main>
- <div>
-   <img src="myphoto.jpg" alt="MyPicture" width="300">
-    <button id="menuToggle">=</button>
-  <aside id="menu">
-<div class="menu-links">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</div>
-</aside>
-<h1>My Skills</h1>
-<ul>
-  <li><strong>HTML</strong><br>I just started using HTML and it's fun to learn.</li>
-  <li><strong>CSS</strong><br>I use it to style my page in order to make it more presentable.</li>
-</ul>
-<h2>My name is Uduak-Abasi Udoma</h2>
-<p>I'm an Aspiring Full Stack Developer in progress.</p>
-<p><mark>I built this website for those who feel the need to progress in life</mark></p>
-<h2>My projects</h2>
-<div class="projects-container">
-<!---Project 1: Portfolio Website-->
-<div class="project-card">
-  <h3>📂 Portfolio Website</h3>
-  <p>My personal portfolio is built with HTML, CSS, and JavaScript</p>
-  <a href="https://github.com/Uduak-2008/My-Work" target="_blank">View on GitHub</a>
-</div>
+    <h1>Contact</h1>
+    <p>To contact me for collaborations, and others, you can contact me through my email and phone number.</p>
+    <form name="contact" action="homepage.html" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="bot-field"/>
+      <input type="hidden" name="form-name" value="contact"/>
 
-<!--Project 2: Calculator-->
-<br><div class="project-card">
-  <h3>🧮 Calculator App</h3>
-  <p>A basic calculator app  built with addition, subtraction, multiplication, and division.</p>
-  <a href="https://uduak-2008.github.io/calculator/">View Project</a>
-</div>
-</div>
-<div class="resume-download">
-  <a href="resume.pdf" download class="resume-link">
-    Download My Resume
+      <p>
+        <label>Your Name: <input type="text" name="name" placeholder="Joshua Steve" required/></label>
+      </p>
+      <p>
+        <label>Your Email:<input type="email" name="email" placeholder="joshsteve@gmail.com" required/></label>
+      </p>
+      <p>
+        <label>Message:<textarea name="message" rows="5" placeholder="Type Your Message Here...." required></textarea></label>
+      </p>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="button-container">
+  <a href="https://mail.google.com/mail/?view=cm&to=uduakabasi.codes@gmail.com" target="_blank">
+  <button class="email-btn">Email Me</button>
   </a>
-</div>
-</main>
-<script src="script.js"></script>
+
+  <a href="https://wa.me/2347010623335">
+    <button class="whatsapp-btn">Whatsapp Me</button>
+  </a>
+  </div>
+
+  <br><a href="index.html">Home</a>
+  <script src="script.js"></script>
   </body>
 </html>
