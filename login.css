@@ -1,4 +1,17 @@
 /* Login Page Styles*/
+* {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, white,grey);
+  text-align: center;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-style: italic;
+  padding: 20px;
+  padding-top: 80px;
+}
 .login-container {
     background: white;
     padding: 40px;
