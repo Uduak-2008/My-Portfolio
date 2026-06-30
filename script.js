@@ -28,46 +28,50 @@ function handleLogin(event) {
 
 }
 
-// Login with Formspree//
+// ===== LOGIN WITH FORMSPREE =====
 document.addEventListener('DOMContentLoaded', function() {
-  const loginForm = document.getElementById('loginForm');
-  if (loginForm) {
-    loginForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const username = document.getElementById('username').Value.trim();
-      const email = document.getElementById('email').Value.trim();
-      const password = document.getElementById('password').Value.trim();
-      const errorMsg = document.getElementById('errorMsg');
+    const loginForm = document.getElementById('loginForm');
 
-      const validUser = "admin"
-      const validPass = "password123";
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-      //if login is successful//
-      if (username === validUser && password === validPass) {
-        fetch('https://formspree.io/f/mkolvbar', {
-          method: 'POST',
-          headers: {
-            'content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            name: username,
-            email: email,
-            password: password,
-            _subject: '🔑 New Login Attempt on Portfolio'
-          })
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const errorMsg = document.getElementById('errorMsg');
 
-        })
-           .then(function(response) {
-            window.location.href = 'hompage.html';
-           }) 
-           .catch(function(error) {
-            window.location.href ='homepage.html';
-           });
-           } else {
-            //login failed//
-            errorMsg.textContent = "Invalid username or password!";
-          }
+            // Hardcoded login credentials
+            const validUser = "admin";
+            const validPass = "password123";
+
+            // ✅ If login is successful
+            if (username === validUser && password === validPass) {
+                // Send notification to Formspree
+                fetch('https://formspree.io/f/mkolvbar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: username,
+                        email: email,
+                        password: password,
+                        _subject: '🔐 New Login Attempt on Portfolio!'
+                    })
+                })
+                .then(function(response) {
+                    // After sending, redirect to portfolio
+                    window.location.href = 'homepage.html';
+                })
+                .catch(function(error) {
+                    // Even if Formspree fails, still let the user in
+                    window.location.href = 'homepage.html';
+                });
+            } else {
+                // ❌ Login failed
+                errorMsg.textContent = "Invalid username or password!";
+            }
         });
-      }
-
-    });
+    }
+});
