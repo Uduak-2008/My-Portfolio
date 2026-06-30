@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
           })
 
         })
-           .then(function() {
+           .then(function(response) {
             window.location.href = 'hompage.html';
            }) 
-           .catch(function() {
+           .catch(function(error) {
             window.location.href ='homepage.html';
            });
-          } else {
+           } else {
             //login failed//
             errorMsg.textContent = "Invalid username or password!";
           }
