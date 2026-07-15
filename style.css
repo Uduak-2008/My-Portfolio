@@ -32,22 +32,26 @@ p {
   line-height: 1.5;
   margin: 15px 0;
 }
-ul {
-    padding-left: 30px;      /* Moves list away from edge */
-    margin: 10px 0 20px 0;
-    list-style-type: square; /* Square bullets */
+.skills-list {
+  list-style-type: square; /* Square bullets */
+    margin: 0 auto; /* Center the list */
+    width: fit-content; /* Adjust width to content */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Indent the list */
 }
 
-li {
+.skills-list li {
     font-size: 18px;
-    margin-bottom: 8px;     /* Space between each item */
+    margin-bottom: 10px;     /* Space between each item */
     line-height: 1.6;
+  
 }
+
 #menuToggle {
   position: absolute;
   top: 15px;
   left: 15px;
-  background: black;
+  background: rgb(80, 70, 70);
   color: beige;
   padding: 10px 16px;
   font-size: 16px;
@@ -201,8 +205,63 @@ img {
   img {
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 100%;
   }
+  #menuToggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgb(80, 70, 70);
+  color: beige;
+  padding: 12px 16px;
+  font-size: 24px;
+  border: none;
+  border-radius: 30% 30%/80% 80%;
+  cursor: pointer;
+  z-index: 1000;
+}
+#menuToggle button {
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background: grey;
+  padding-top: 70px;
+  display: none;
+  z-index: 999;
+}
+#menu.show {
+display: block;
+}
+#menu a {
+  display: block;
+  color: none;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid #555;
+}
+.hide {
+  display: none;
+}
+.menu-links a{
+  display: none;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  border-bottom: 1px solid beige;
+}
+.menu-links a:hover {
+  background: #555;
+}
 }
 
 .project-card {
@@ -243,7 +302,7 @@ img {
 }
 .resume-link {
   display: inline-block;
-  background: grey;
+  background: #3b3838;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
